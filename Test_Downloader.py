@@ -1,7 +1,7 @@
 import os
 from pytube import YouTube, Playlist
 from Levenshtein import distance
-import eyeD3 
+# import eyeD3 
 
 PATH = "E:\\Musikote"
 link = input("Enter the link: ")
@@ -49,7 +49,7 @@ for link in playlist:
     new_file = base + '.mp3'
 
     # Store the metadata (title, author)
-    audio_file = eyeD3.Mp3AudioFile(new_file)
-    audio_file.tag.artist = yt.author
-    audio_file.tag.title = yt.title
-    audio_file.tag.save()
+    # audio_file = eyeD3.Mp3AudioFile(new_file)
+    # audio_file.tag.artist = yt.author
+    # audio_file.tag.title = yt.title
+    # audio_file.tag.save()
