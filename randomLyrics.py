@@ -47,11 +47,12 @@ while files:
   
 
 lyrics = song.lyrics.split("\n")
-lyric = " "
-while lyric == " ":
+lyric = ""
+while lyric == "":
     lyric =random.choice(lyrics)
 
 print(lyric, "\n--",song.title, " -- ",song.artist)
+print("\n ortiginal song: ", name," -> ",refined_name)
 # lyrics_split = song.lyrics.split("\n")
 # lyric_choice =random.choice(range(1,len(lyrics_split)))
 # final_lyric = lyrics_split[lyric_choice]

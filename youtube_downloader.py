@@ -37,7 +37,7 @@ for link in playlist.video_urls:
         
     out_file = ys.download(PATH+"\\Prueba")
     base, ext = os.path.splitext(out_file)
-    new_file = base + '.mp3'
+    new_file = base +" - "+yt.author+ '.mp3'
     try:
         os.rename(out_file, new_file)     
         print(yt.title + " has been successfully downloaded.")
